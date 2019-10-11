@@ -93,6 +93,7 @@ class SortingRobot:
         """
         return self._light == "ON"
 
+
     def sort(self):
         """
         BUBBLE SORT
@@ -105,6 +106,7 @@ class SortingRobot:
             #then move left and swap.
             #then move right two spaces
         self.set_light_on()
+        #  if robot light off then stop. if on then go back repeat process from beginning 
         while self.light_is_on() is True:
             self.set_light_off()
 

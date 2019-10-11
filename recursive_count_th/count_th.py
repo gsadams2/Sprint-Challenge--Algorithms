@@ -6,7 +6,7 @@ Your function must utilize recursion. It cannot contain any loops.
 
 #thhelloth
 def count_th(word):
-    word.lower()
+    # word.lower()
     if 'th' in word:
         count = 1
         index_location = word.find('th') + 2

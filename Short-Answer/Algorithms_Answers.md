@@ -15,7 +15,6 @@ cancels out the n^3 outside the while loop, which makes it just n.
 
 However, I'm also wondering if a = a + n * n is just constant time because it's a variable assignemnt
 
-
 ANSWER: O(n)
 
 
@@ -23,12 +22,12 @@ ANSWER: O(n)
 b)  sum = 0
     for i in range(n): 
       j = 1
-      while j < n:
+      while j < n: #logn
         j *= 2
         sum += 1
 ```
 
-ANSWER: O(n^2) because it's nested
+ANSWER: O(n log n) because it's nested
 
 ```
 c)  def bunnyEars(bunnies):
